@@ -80,11 +80,13 @@ main img {
 .input-error {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2px;
 }
 #error {
-  margin: 0 0 20px 54px;
+  display: none;
   color: #ff5466;
+  margin-bottom: 10px;
   font-size: 10px;
   font-style: italic;
   font-weight: 400;
@@ -156,10 +158,13 @@ footer p {
     width: 421px;
     height: 56px;
   }
-  .input-container label {
-    top: 18px;
-    left: 30px;
-    font-size: 16px;
+  .input-error {
+    gap: 6px;
+    align-items: flex-start;
+  }
+  #error {
+    margin-left: 30px;
+    margin-bottom: -30px;
   }
   main img {
     margin-top: 94px;
